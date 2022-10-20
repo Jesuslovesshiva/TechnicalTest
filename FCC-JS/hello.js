@@ -1,10 +1,13 @@
-const myNoun = "dog";
-const myAdjective = "big";
-const myVerb = "ran";
-const myAdverb = "quickly";
+const arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14]
+  ];
+  
+  const subarray = arr[3];
+  const nestedSubarray = arr[3][0];
+  const element = arr[2][1];
 
-// Only change code below this line
-const wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb ; // Change this line
-// Only change code above this line
 
-console.log(wordBlanks);
+  console.log(element);
