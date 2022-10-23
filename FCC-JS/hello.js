@@ -1,13 +1,17 @@
-const arr = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-    [[10, 11, 12], 13, 14]
-  ];
-  
-  const subarray = arr[3];
-  const nestedSubarray = arr[3][0];
-  const element = arr[2][1];
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item); 
+
+  return arr.shift();
+}
+  // Only change code above this line
 
 
-  console.log(element);
+// Setup
+let hi = [8, 9, 10 ];
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
