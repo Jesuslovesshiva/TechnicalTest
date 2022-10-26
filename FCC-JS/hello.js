@@ -1,15 +1,10 @@
-const myStorage = {
-  "car": {
-    "inside": {
-      "glove box": "maps",
-      "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
-    }
-  }
-};
+const testObj = {
+  12: 'Nemo',
+  16: 'Montana',
+  19: 'Unitas'
+}
 
-const gloveBoxContents = myStorage.car["inside"]["glove box"]
+testObj[22] = 'Tom';
 
-console.log(gloveBoxContents)
+
+console.log(testObj[22])
