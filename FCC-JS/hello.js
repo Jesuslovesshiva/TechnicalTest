@@ -1,10 +1,6 @@
-const testObj = {
-  12: 'Nemo',
-  16: 'Montana',
-  19: 'Unitas'
+function myFun(a, ...manyMoreArgs) {
+
+  console.log(a, "b", "manyMoreArgs", manyMoreArgs);
 }
 
-testObj[22] = 'Tom';
-
-
-console.log(testObj[22])
+myFun("one", "two", "three", "four", "five", "six");
