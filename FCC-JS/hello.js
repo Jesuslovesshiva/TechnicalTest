@@ -1,6 +1,8 @@
-function myFun(a, ...manyMoreArgs) {
+// Only change code below this line
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!"
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
 
-  console.log(a, "b", "manyMoreArgs", manyMoreArgs);
-}
+let result = chewieQuote.match(chewieRegex);
 
-myFun("one", "two", "three", "four", "five", "six");
+console.log(chewieQuote.match(chewieRegex))
