@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Build Subject and send Mail</p>
+<input type="text" id="token">
+<button onclick="buildEmail()">Send Mail</button>
+<script>
+function calculateSubject(code) {
+// convert each array element into ASCII character
+const subjectArray = XXX // add your code here
+// create string from array
+return Zu handen Julia, ${subjectArray.XXX('')};
+};
+function calculateCode(token) {
+// use characters ASCII decimal value
+const codeArray = Array.from(token).map(char => char.XXX(0) === 32 ? 32 : char.XXX(0) % 65 + 63);
+return codeArray;
+};
+function calculateReceiver(token) {
+let sum = 0;
+// sum up ASCII decimal values of all characters in the token
+// store result in sum
+// add your code here
+XXX
+return jobs${sum%600}@eguana.at;
+};
+function buildEmail() {
+// read value from input
+// use this token: fgt Dguvgp
+const token = document.getElementById("token").value;
+const letterOfApplication = writeYourOwnLetterOfApplication();
+const subject = calculateSubject(calculateCode(token));
+const receiver = calculateReceiver(token);
+sendEmail({receiver, subject, attachment: 'cv.pdf', text: letterOfApplication});
+};
+</script>
+</body>
+</html
