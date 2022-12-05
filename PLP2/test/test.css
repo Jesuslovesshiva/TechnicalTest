@@ -1,0 +1,66 @@
+:root,
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+}
+
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #45ADFE;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  height: 280px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.toggle-switch {
+  position: relative;
+}
+
+.theme-btn {
+  width: 6em;
+  height: 6em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: block;
+}
